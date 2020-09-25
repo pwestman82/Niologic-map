@@ -13,7 +13,7 @@ const App = () => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       // See style options here: https://docs.mapbox.com/api/maps/#styles
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/pwestman/ckfi0txm50wjz19s3zlc4u83c',
       center: [25.279652, 54.687157],
       zoom: 12.5,
     });
@@ -50,8 +50,8 @@ const App = () => {
         type: 'circle',
         source: 'geojson',
         paint: {
-          'circle-radius': 5,
-          'circle-color': '#000'
+          'circle-radius': 7,
+          'circle-color': '#000066'
         },
         filter: ['in', '$type', 'Point']
       });
@@ -64,8 +64,8 @@ const App = () => {
           'line-join': 'round'
         },
         paint: {
-          'line-color': '#000',
-          'line-width': 2.5
+          'line-color': '#000066',
+          'line-width': 3.5
         },
         filter: ['in', '$type', 'LineString']
       });
@@ -116,8 +116,8 @@ const App = () => {
           var value = document.createElement('pre');
           value.textContent =
             'Total distance: ' +
-            turf.length(linestring).toLocaleString() +
-            'km';
+            (turf.length(linestring).toLocaleString()*1000) +
+            'm';
           distanceContainer.appendChild(value);
         }
 
