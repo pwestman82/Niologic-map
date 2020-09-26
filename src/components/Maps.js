@@ -54,7 +54,7 @@ const Maps = () => {
         type: 'circle',
         source: 'geojson',
         paint: {
-          'circle-radius': 7,
+          'circle-radius': 8,
           'circle-color': '#000066'
         },
         filter: ['in', '$type', 'Point']
@@ -69,7 +69,7 @@ const Maps = () => {
         },
         paint: {
           'line-color': '#000066',
-          'line-width': 3.5
+          'line-width': 4.5
         },
         filter: ['in', '$type', 'LineString']
       });
