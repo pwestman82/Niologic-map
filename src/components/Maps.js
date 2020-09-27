@@ -16,9 +16,9 @@ const Maps = () => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: 'mapbox://styles/pwestman/ckfi0txm50wjz19s3zlc4u83c',
+      style: 'mapbox://styles/pwestman/ckflnhvw73gql19mlug8525xr',
       center: [25.279652, 54.687157],
-      zoom: 11.5,
+      zoom: 12,
     });
 
     // add navigation control (the +/- zoom buttons)
