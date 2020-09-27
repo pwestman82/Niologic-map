@@ -24,3 +24,4 @@ must use redux for this exercise here).
 
 Add the [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) extension to your Chrome browser while using the live [link](https://zen-feynman-9de0a5.netlify.app/), as shown here: 
 
+![Browser-Preview](https://user-images.githubusercontent.com/60080367/94370302-7c729580-00ef-11eb-98e0-ffa62c1153bc.png)
