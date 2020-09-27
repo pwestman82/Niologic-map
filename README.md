@@ -6,6 +6,7 @@ This purpose of this project is to measure the distance between selected points 
 
 ### Required Criteria
 
+Markup :
 *Fullscreen map usable on Chrome (2019 and 2020 releases).
 *Center Vilnius in the center of the map with an appropriate zoom level.
 *Use a nice map style.
