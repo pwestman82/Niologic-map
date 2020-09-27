@@ -1,14 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import * as turf from '@turf/turf'
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addFeatureToStore, increaseTotalDistanceInStore } from '../actions/mapsActions';
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
 const Maps = () => {
   const mapContainerRef = useRef(null);
-  const features = useSelector(state => state.features);
+  // const features = useSelector(state => state.features);
   const dispatch = useDispatch();
 
   
