@@ -16,10 +16,9 @@ const Maps = () => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      // See style options here: https://docs.mapbox.com/api/maps/#styles
       style: 'mapbox://styles/pwestman/ckfi0txm50wjz19s3zlc4u83c',
       center: [25.279652, 54.687157],
-      zoom: 12.5,
+      zoom: 11.5,
     });
 
     // add navigation control (the +/- zoom buttons)
@@ -54,7 +53,7 @@ const Maps = () => {
         type: 'circle',
         source: 'geojson',
         paint: {
-          'circle-radius': 8,
+          'circle-radius': 6,
           'circle-color': '#000066'
         },
         filter: ['in', '$type', 'Point']
@@ -69,7 +68,7 @@ const Maps = () => {
         },
         paint: {
           'line-color': '#000066',
-          'line-width': 4.5
+          'line-width': 4
         },
         filter: ['in', '$type', 'LineString']
       });
